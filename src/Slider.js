@@ -19,7 +19,7 @@ const Slider = ({ header }) => {
       className="carousel overflow-hidden"
       initial={{ opacity: 0, x: -500 }}
       whileInView={{ opacity: 1, x: 0 }}
-      transition={{ type: "tween", duration: 1.2 }}
+      transition={{ type: "spring", duration: 2 }}
     >
       <h1 className="ml-12 font-bold text-3xl mt-3 header">{header}</h1>
       <motion.div
