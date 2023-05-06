@@ -1,11 +1,11 @@
 .carousel {
-  margin: 30px 20%;
+  margin: 30px 10%;
 }
 
 .item {
   min-height: 13.2rem;
   min-width: 30rem;
-  padding: 40px;
+  /* padding: 20px; */
   margin-top: -12px;
 }
 

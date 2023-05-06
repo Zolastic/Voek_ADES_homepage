@@ -9,7 +9,9 @@ const NavBar = () => {
   return (
     <div className="navbar flex p-3 px-16">
       <div>
-        <h1 className="voekLogo pl-5 text-2xl font-bold">VOEK</h1>
+        <h1 className="voekLogo pl-5 text-2xl font-bold cursor-pointer">
+          VOEK
+        </h1>
       </div>
       <div className="grow"></div>
 
@@ -31,8 +33,8 @@ const NavBar = () => {
       </div>
 
       <div className="flex pr-12 navbarLinks">
-        <h1 className="px-6 text-2xl font-bold">Cart</h1>
-        <h1 className="px-6 text-2xl font-bold">Profile</h1>
+        <h1 className="px-6 pr-5 text-2xl font-bold cursor-pointer">Cart</h1>
+        <h1 className="px-6 pl-5 text-2xl font-bold cursor-pointer">Profile</h1>
       </div>
     </div>
   );

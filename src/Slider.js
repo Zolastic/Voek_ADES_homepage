@@ -1,7 +1,7 @@
 import React from "react";
 import { useRef, useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import images from "./images";
+import { images } from "./images";
 import "./css/Slider.css";
 
 const Slider = ({ header }) => {
@@ -29,10 +29,11 @@ const Slider = ({ header }) => {
       >
         {images.map((image) => {
           return (
-            <motion.div className="item">
+            <motion.div className="item p-5 px-4 pt-7">
               <img
                 src={image}
-                className="rounded-2xl pointer-events-none"
+                alt="products"
+                className="rounded-5xl pointer-events-none"
                 key={image}
               />
             </motion.div>

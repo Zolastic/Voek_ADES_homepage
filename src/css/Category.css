@@ -1,0 +1,20 @@
+.category {
+  margin: 30px 18%;
+}
+
+.sixty {
+  height: 60%;
+}
+
+.forty {
+  height: 40%;
+}
+
+img {
+  object-fit: cover;
+  border-radius: 48px;
+}
+
+img:hover {
+  cursor: pointer;
+}
