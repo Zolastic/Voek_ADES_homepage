@@ -8,7 +8,8 @@
 }
 
 .modalBackground {
-  background: linear-gradient(15deg, #d4c3a5, #2f4858);
+  /* background: linear-gradient(15deg, #d4c3a5, #2f4858); */
+  background-color: #dfe0df;
 }
 
 .closeButtonContainer {
@@ -27,4 +28,42 @@
   border-radius: 4px;
   transition: background ease 400ms;
   /* box-shadow: 1px 1px 15px #03030399; */
+}
+
+.imgContainer img {
+  border-radius: 20px;
+}
+
+.price {
+  color: #6a0500;
+}
+
+.variation {
+  border: 1px solid black;
+}
+
+.variationSelected {
+  background-color: #6a0500;
+  color: white;
+}
+
+.imgContainer {
+  min-width: 50%;
+}
+
+.description {
+  word-wrap: break-word;
+  text-align: justify;
+  width: 80%;
+}
+
+.cartButton {
+  border-width: 1px;
+  border-color: #6a0500;
+  background-color: rgba(184, 62, 55, 0.3);
+  color: #6a0500;
+}
+
+.buyButton {
+  background-color: #6a0500;
 }

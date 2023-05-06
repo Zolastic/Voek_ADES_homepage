@@ -4,7 +4,13 @@ import { motion } from "framer-motion";
 import { images } from "./images";
 import "./css/Slider.css";
 
-const Slider = ({ header, modalOpenFn, modalCloseFn, modalOpen }) => {
+const Slider = ({
+  header,
+  modalOpenFn,
+  modalCloseFn,
+  modalOpen,
+  setProductImg,
+}) => {
   const [width, setWidth] = useState(0);
   const carousel = useRef();
 
@@ -41,6 +47,7 @@ const Slider = ({ header, modalOpenFn, modalCloseFn, modalOpen }) => {
                 onClick={() => {
                   console.log("testing", modalOpen);
                   modalOpen ? modalCloseFn() : modalOpenFn();
+                  setProductImg(image);
                 }}
               />
             </motion.div>

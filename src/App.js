@@ -8,6 +8,7 @@ import { AnimatePresence } from "framer-motion";
 
 function App() {
   const [modalOpen, setModalOpen] = useState(false);
+  const [productImg, setProductImg] = useState();
   const modalOpenFn = () => {
     setModalOpen(true);
   };
@@ -26,16 +27,22 @@ function App() {
         modalOpen={modalOpen}
         modalOpenFn={modalOpenFn}
         modalCloseFn={modalCloseFn}
+        setProductImg={setProductImg}
       />
       <Slider
         header={"For You"}
         modalOpen={modalOpen}
         modalOpenFn={modalOpenFn}
         modalCloseFn={modalCloseFn}
+        setProductImg={setProductImg}
       />
       <AnimatePresence initial={false} onExitComplete={() => null}>
         {modalOpen && (
-          <Modal modalOpen={modalOpen} handleClose={modalCloseFn} />
+          <Modal
+            modalOpen={modalOpen}
+            handleClose={modalCloseFn}
+            productImg={productImg}
+          />
         )}
       </AnimatePresence>
     </div>
