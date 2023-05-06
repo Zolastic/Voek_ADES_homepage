@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { images } from "./images";
 import "./css/Slider.css";
 
-const Slider = ({ header }) => {
+const Slider = ({ header, modalOpenFn, modalCloseFn, modalOpen }) => {
   const [width, setWidth] = useState(0);
   const carousel = useRef();
 
@@ -29,12 +29,19 @@ const Slider = ({ header }) => {
       >
         {images.map((image) => {
           return (
-            <motion.div className="item p-5 px-4 pt-7">
-              <img
+            <motion.div className="item p-5 px-4 pt-7 cursor-pointer">
+              <motion.img
                 src={image}
                 alt="products"
-                className="rounded-5xl pointer-events-none"
+                draggable={false}
+                className="rounded-5xl"
                 key={image}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                onClick={() => {
+                  console.log("testing", modalOpen);
+                  modalOpen ? modalCloseFn() : modalOpenFn();
+                }}
               />
             </motion.div>
           );

@@ -1,0 +1,30 @@
+.modal {
+  width: clamp(50%, 700px, 90%);
+  height: min(50%, 300px);
+  margin: auto;
+  border-radius: 12px;
+  margin-bottom: 200px;
+  height: 50%;
+}
+
+.modalBackground {
+  background: linear-gradient(15deg, #d4c3a5, #2f4858);
+}
+
+.closeButtonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.close-button {
+  padding: 0 2rem;
+  height: 2.5rem;
+  margin: 2rem auto 1rem 0;
+  /* background: #101111; */
+  /* color: #6a0500; */
+  border-radius: 4px;
+  transition: background ease 400ms;
+  /* box-shadow: 1px 1px 15px #03030399; */
+}
