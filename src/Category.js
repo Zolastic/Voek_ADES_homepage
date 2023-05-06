@@ -18,7 +18,7 @@ const Category = () => {
       whileInView={{ opacity: 1 }}
       transition={{ type: "spring", duration: 2 }}
     >
-      <ResponsiveMasonry columnsCountBreakPoints={{ default: 3 }}>
+      <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
         <Masonry gutter="20px">
           <img src={clothesImg} alt="Clothes" />
           <div className="flex flex-col grow gap-y-5">
